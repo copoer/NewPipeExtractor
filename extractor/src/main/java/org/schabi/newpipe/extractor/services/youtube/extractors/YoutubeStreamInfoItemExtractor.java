@@ -144,7 +144,7 @@ public class YoutubeStreamInfoItemExtractor implements StreamInfoItemExtractor {
         try {
             // TODO: Return the actual live stream's watcher count
             // -1 for no view count
-            if (getStreamType() == StreamType.LIVE_STREAM) return -1;
+            //if (getStreamType() == StreamType.LIVE_STREAM) return -1;
 
             Element meta = item.select("div[class=\"yt-lockup-meta\"]").first();
             if (meta == null) return -1;
