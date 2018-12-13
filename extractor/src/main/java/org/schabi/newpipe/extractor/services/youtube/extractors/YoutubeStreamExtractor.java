@@ -921,6 +921,8 @@ public class YoutubeStreamExtractor extends StreamExtractor {
 
             @Override
             public long getViewCount() throws ParsingException {
+                return -1;
+                /*
                 try {
                     if (getStreamType() == StreamType.LIVE_STREAM) return -1;
 
@@ -930,6 +932,7 @@ public class YoutubeStreamExtractor extends StreamExtractor {
                     //related videos sometimes have no view count
                     return 0;
                 }
+                */
             }
 
             @Override
