@@ -140,6 +140,8 @@ public class YoutubeStreamInfoItemExtractor implements StreamInfoItemExtractor {
 
     @Override
     public long getViewCount() throws ParsingException {
+        return -1;
+        /*
         String input;
         try {
             // TODO: Return the actual live stream's watcher count
@@ -167,7 +169,7 @@ public class YoutubeStreamInfoItemExtractor implements StreamInfoItemExtractor {
             }
 
             throw new ParsingException("Could not handle input: " + input, e);
-        }
+        }*/
     }
 
     @Override
